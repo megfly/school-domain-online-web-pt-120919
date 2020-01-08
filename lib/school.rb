@@ -9,8 +9,8 @@ class School
   end 
   
   def add_student(name, grade)
-    hash["name"] = []
-    hash["name"] << "name"
+    roster[grade] = [] unless roster[grade]
+    roster[grade] << name
   end 
   
   
